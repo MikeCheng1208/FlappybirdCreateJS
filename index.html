@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Flappybird">
+	<meta property="og:description" content="用CreateJS改寫FlappyBird，版權所有屬於原作者，以上純屬技術練習，並無商業營利行為!!">
+	<meta property="og:url" content="http://www.touch-idea.net/mike_cheng/flappybirdCreateJS/">
+	<meta property="og:image" content="https://pbs.twimg.com/profile_images/429953558667362304/GE4ACxk0.jpeg">
+    <title>FlappyBird</title>
+   <script src="js/createjs-2014.12.12.min.js"></script>
+   <script src="js/movieclip-0.8.0.min.js"></script>
+   <script src="js/ndgmr.Collision.js"></script>
+   <script src="js/stats.min.js"></script>
+   <script src="fly.js"></script>
+   
+   
+   <style type="text/css">
+	   *{
+			padding: 0;
+		   margin: 0;
+	   }
+	   html,body{
+			width: 100%;
+			height: 100%;
+		   background-color: #000;
+	   }
+       @font-face {
+            font-family: 'Flappy Bird';
+            src: url('fonts/FB.eot');
+            src: url('fonts/FB.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/FB.woff') format('woff'),
+                 url('fonts/FB.ttf') format('truetype'),
+                 url('fonts/FB.svg#04b_19regular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+       }
+       #canvas{
+			display: block;
+			width: 429px;
+			height: 590px;
+			margin: 20px auto 0 auto;
+       }
+	   p{
+		   display: block;
+		   width: 429px;
+		   text-align: center;
+		   font-size: 15px;
+		   color: #fff;
+		   margin: 10px auto 0 auto;
+	   }
+	   @media screen and (max-width: 640px) {
+		   html,body{
+				width: 100%;
+				height: 100%;
+		   }
+	   		#canvas{
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+		   p{
+			   display: none;
+		   }
+		   
+	   }
+   </style>
+    
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<canvas id="canvas" width="429" height="590" style="background-color:#ccc"></canvas>
+  	<P>版權所有屬於原作者，以上純屬技術練習，並無商業營利行為!!</P>
+   	<script src="js/main.js"></script>
+	
+</body>
+</html>
